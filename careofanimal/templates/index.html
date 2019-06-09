@@ -1,0 +1,480 @@
+
+<!doctype html>
+{% load static %}
+<html lang="en">
+    <head>
+        <!-- Required meta tags -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link rel="icon" href="img/favicon.png" type="image/png">
+        <title>Kindity Charity Multi</title>
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="{% static 'css/bootstrap.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/linericon/style.css' %}">
+        <link rel="stylesheet" href="{% static 'css/font-awesome.min.css' %}">
+        <link rel="stylesheet" href="{% static 'vendors/owl-carousel/owl.carousel.min.css'%}">
+        <link rel="stylesheet" href="{% static 'vendors/lightbox/simpleLightbox.css'%}">
+        <link rel="stylesheet" href="{% static 'vendors/nice-select/css/nice-select.css'%}">
+        <link rel="stylesheet" href="{% static 'vendors/animate-css/animate.css'%}">
+        <!-- main css -->
+        <link rel="stylesheet" href="{% static 'css/style.css'%}">
+        <link rel="stylesheet" href="{% static 'css/responsive.css'%}">
+		<link rel="stylesheet" href="{% static 'css/testimonials.css'%}">
+		<link rel="stylesheet" href="{% static 'css/testimonials.css.map'%}">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+	</head>
+    <body>
+        
+        <!--================Header Menu Area =================-->
+        <header class="header_area">
+           	<div class="top_menu row m0">
+           		<div class="container">
+					<div class="float-left">
+						<ul class="list header_social">
+							<li><a href="#"><i class="fa fa-facebook"></i></a></li>
+							<li><a href="#"><i class="fa fa-twitter"></i></a></li>
+							<li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+							<li><a href="#"><i class="fa fa-behance"></i></a></li>
+						</ul>
+					</div>
+					<div class="float-right">
+						<select class="lan_pack">
+							{%for langs in langs%}
+                                <option value="1">{{langs.language_name}}</option>
+                            {%endfor%}
+						</select>
+
+						<a class="ac_btn" href="#">Donate Now</a>
+					</div>
+           		</div>	
+           	</div>	
+            <div class="main_menu">
+            	<nav class="navbar navbar-expand-lg navbar-light">
+					<div class="container">
+						<!-- Brand and toggle get grouped for better mobile display -->
+						<a class="navbar-brand logo_h" href="index.html"><img src="{{home_logo.url}}" height="70px"  alt=""></a>
+						<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+							<span class="icon-bar"></span>
+						</button>
+						<!-- Collect the nav links, forms, and other content for toggling -->
+						<div class="collapse navbar-collapse offset" id="navbarSupportedContent">
+							<ul class="nav navbar-nav menu_nav ml-auto">
+								<li class="nav-item active"><a class="nav-link" href="index.html">{{menu_home}}</a></li>
+								<li class="nav-item"><a class="nav-link" href="gallery.html">{{menu_gallery}}</a></li>
+								<li class="nav-item"><a class="nav-link" href="about-us.html">{{menu_about}}</a></li>
+								 <li class="nav-item"><a class="nav-link" href="about-us.html">{{menu_events}}</a></li>
+
+
+								<li class="nav-item"><a class="nav-link" href="contact.html">{{menu_contact}}</a></li>
+							</ul>
+							<ul class="nav navbar-nav navbar-right">
+								<li class="nav-item"><a href="#" class="search"><i class="lnr lnr-magnifier"></i></a></li>
+							</ul>
+						</div> 
+					</div>
+            	</nav>
+            </div>
+        </header>
+        <!--================Header Menu Area =================-->
+        
+        <!--================Home Banner Area =================-->
+        <section class="home_banner_area">
+            <div class="banner_inner d-flex align-items-center">
+            	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+				<div class="container">
+					<div class="banner_content text-center">
+						<h5>We need your Help to serve the animals</h5>
+						<h3></h3>
+						<a class="main_btn" href="#">Donate Now</a>
+						<a class="white_btn" href="#">View Activity</a>
+					</div>
+				</div>
+            </div>
+            <div class="donation_area">
+				<div class="container">
+					<div class="row donation_inner">
+						<div class="col-lg-4">
+							<div class="dontation_item yellow">
+								<div class="media">
+									<div class="media-body">
+										<h4>Total Donation</h4>
+										<p>The French Revolutioncons tituted for the conscience of the dominant.</p>
+									</div>
+									<div class="d-flex">
+										<h3>$2.5M</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="dontation_item pink">
+								<div class="media">
+									<div class="media-body">
+										<h4>Total Volunteers</h4>
+										<p>The French Revolutioncons tituted for the conscience of the dominant.</p>
+									</div>
+									<div class="d-flex">
+										<h3>3268</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4">
+							<div class="dontation_item green">
+								<div class="media">
+									<div class="media-body">
+										<h4>Future Plans</h4>
+										<p>The French Revolutioncons tituted for the conscience of the dominant.</p>
+									</div>
+									<div class="d-flex">
+										<h3>$7.5M</h3>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+            </div>
+        </section>
+        <!--================End Home Banner Area =================-->
+        
+        <!--================Welcome Area =================-->
+        <section class="welcome_area p_120">
+        	<div class="container">
+        		<div class="row welcome_inner">
+        			<div class="col-lg-6">
+        				<div class="welcome_text">
+        					<h4>Welcome to Kindity</h4>
+        					<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace. That’s why it’s crucial that, as women, our behavior on the job is beyond reproach. inappropriate behavior is often laughed.</p>
+        					<div class="row">
+        						<div class="col-sm-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-database"></i>
+        								<h4>$2.5M</h4>
+        								<p>Total Donation</p>
+        							</div>
+        						</div>
+        						<div class="col-sm-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-book"></i>
+        								<h4>1465</h4>
+        								<p>Total Projects</p>
+        							</div>
+        						</div>
+        						<div class="col-sm-4">
+        							<div class="wel_item">
+        								<i class="lnr lnr-users"></i>
+        								<h4>3965</h4>
+        								<p>Total Volunteers</p>
+        							</div>
+        						</div>
+        					</div>
+        				</div>
+        			</div>
+        			<div class="col-lg-6">
+        				<div class="welcome_img">
+        					<img class="img-fluid" src="{% static 'img/welcome-img.jpg' %}" alt="">
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Welcome Area =================-->
+        
+        <!--================Causes Area =================-->
+        <section class="causes_area p_120">
+        	<div class="container">
+        		<div class="main_title">
+        			<h2>Our Major Causes</h2>
+        			<p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence, and upturning of the natural chain of events that resounded.</p>
+        		</div>
+        		<div class="causes_slider owl-carousel">
+				{% for animal_need_help in animal_need_help %}
+					<div class="item">
+					<style>
+						.causes_item .causes_img .c_parcent span:before {
+								content: attr(data-content);
+								position: absolute;
+								right: -10px;
+								bottom: 0px;
+								background: #ea2c58;
+								color: #fff;
+								padding: 0px 5px;
+
+							}
+							#perc{
+							width:100%;
+							}
+
+
+
+					</style>
+        				<div class="causes_item">
+        					<div class="causes_img">
+        						<img class="img-fluid" src="{{animal_need_help.animal_image1.url}}" alt="">
+
+        						<div class="c_parcent" id="c_parcent{{animal_need_help.animal_name}}">
+        							<span id="perc" ></span>
+        						</div>
+        					</div>
+
+							<script>
+							function myfunct{{animal_need_help.animal_name}}(a,b){
+								c=a/b*100
+								document.getElementById("c_parcent{{animal_need_help.animal_name}}").style.width= c + "%";
+								}
+								myfunct{{animal_need_help.animal_name}}({{animal_need_help.animal_is_donated}},{{animal_need_help.animal_need_amount}})
+
+							</script>
+        					<div class="causes_text">
+        						<h4>Did not find your Package</h4>
+        						<p>inappropriate behavior is often laughed off as “boys will be boys,” women face higher conduct standards especially in the workplace that’s why it’s crucial.</p>
+        					</div>
+        					<div class="causes_bottom">
+								<a href="#">Raised: ${{animal_need_help.animal_is_donated}}</a>
+								<a href="#">Total Need: ${{animal_need_help.animal_need_amount}}</a>
+							</div>
+        				</div>
+        			</div>
+			{% endfor %}
+
+        		</div>
+        	</div>
+        </section>
+        <!--================End Causes Area =================-->
+
+        <!--================Feature Area =================-->
+        <section class="feature_area p_120">
+        	<div class="overlay bg-parallax" data-stellar-ratio="0.9" data-stellar-vertical-offset="0" data-background=""></div>
+        	<div class="container">
+        		<div class="white_title">
+        			<h2>Our Key Features</h2>
+        			<p>The French Revolution constituted for the conscience of the dominant aristocratic class a fall from innocence, and upturning of the natural chain of events that resounded.</p>
+        		</div>
+        		<div class="row feature_inner">
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-diamond"></i>
+        					<h4>Sponsorship</h4>
+        					<p>The French Revolutioncons tituted for the conscience of the dominant. aristocr atic class a fall from.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-coffee-cup"></i>
+        					<h4>Donate Amount</h4>
+        					<p>The French Revolutioncons tituted for the conscience of the dominant. aristocr atic class a fall from.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-4">
+        				<div class="feature_item">
+        					<i class="lnr lnr-wheelchair"></i>
+        					<h4>Become a Volunteer</h4>
+        					<p>The French Revolutioncons tituted for the conscience of the dominant. aristocr atic class a fall from.</p>
+        				</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Feature Area =================-->
+        
+        <!--================Event Area =================-->
+        <section class="event_area p_120">
+        	<div class="container">
+	<div id="carouselExampleIndicators" class="carousel slide" style="width:800px;height:400px; margin:auto;padding:0;" data-ride="carousel">
+  <ol class="carousel-indicators">
+    <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+    <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+  </ol>
+
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img  src="{% static 'images/eventsour.jpg' %}"  class="d-block w-100" alt="First slide">
+    </div>
+	  {%for event in event%}
+    <div class="carousel-item">
+     <img src="{{event.image_main.url}}" class="d-block w-100" alt="...">
+								  <div class="carousel-caption d-none d-md-block">
+									<h5>{{event.title}}</h5>
+									<p>{{event.event_little_detail}}</p>
+								  </div>
+    </div>
+	  {%endfor%}
+
+  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+
+
+
+</div>
+
+			</div>
+		</section>
+        <!--================End Event Area =================-->
+        
+        <!--================Testimonials Area =================-->
+        <section class="testimonials_area p_120">
+        	<div class="container">
+        		<div class="row testimonials_inner">
+        			<div class="col-lg-4">
+        				<div class="testi_left_text">
+        					<h4>Testimonial from our Donors</h4>
+        					<p>Las Vegas has more than 100,000 hotel rooms to choose from. There is something for every budget, and enough.</p>
+        				</div>
+        			</div>
+        			<div class="col-lg-8">
+        				<div class="testi_slider owl-carousel">
+							{%for donor_review in donor_review%}
+							<div class="item">
+								<div class="testi_item">
+									<img src="{{donor_review.donor_image.url}}" style="width:180px; height:180px;" alt="">
+									<p>{{donor_review.donor_description}}</p>
+									<h4>{{donor_review.donor_name}}</h4>
+									<h6>{{donor_review.donor_is_who}}</h6>
+								</div>
+							</div>
+							{%endfor%}
+						</div>
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Testimonials Area =================-->
+        
+        <!--================Clients Logo Area =================-->
+        <section class="clients_logo_area">
+        	<div class="container">
+        		<div class="clients_slider owl-carousel">
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-1.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-2.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-3.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-4.png" alt="">
+        			</div>
+        			<div class="item">
+        				<img src="img/clients-logo/c-logo-5.png" alt="">
+        			</div>
+        		</div>
+        	</div>
+        </section>
+        <!--================End Clients Logo Area =================-->
+        
+        
+        <!--================ start footer Area  =================-->	
+        <footer class="footer-area section_gap">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-3  col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">About Agency</h6>
+                            <p>The world has become so fast paced that people don’t want to stand by reading a page of information, they would much rather look at a presentation and understand the message. It has come to a point </p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Navigation Links</h6>
+                            <div class="row">
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="#">Home</a></li>
+                                        <li><a href="#">Feature</a></li>
+                                        <li><a href="#">Services</a></li>
+                                        <li><a href="#">Portfolio</a></li>
+                                    </ul>
+                                </div>
+                                <div class="col-4">
+                                    <ul class="list">
+                                        <li><a href="#">Team</a></li>
+                                        <li><a href="#">Pricing</a></li>
+                                        <li><a href="#">Blog</a></li>
+                                        <li><a href="#">Contact</a></li>
+                                    </ul>
+                                </div>										
+                            </div>							
+                        </div>
+                    </div>							
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget">
+                            <h6 class="footer_title">Newsletter</h6>
+                            <p>For business professionals caught between high OEM price and mediocre print and graphic output, </p>		
+                            <div id="mc_embed_signup">
+                                <form target="_blank" action="https://spondonit.us12.list-manage.com/subscribe/post?u=1462626880ade1ac87bd9c93a&amp;id=92a4423d01" method="get" class="subscribe_form relative">
+                                    <div class="input-group d-flex flex-row">
+                                        <input name="EMAIL" placeholder="Email Address" onfocus="this.placeholder = ''" onblur="this.placeholder = 'Email Address '" required="" type="email">
+                                        <button class="btn sub-btn"><span class="lnr lnr-location"></span></button>		
+                                    </div>									
+                                    <div class="mt-10 info"></div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 col-sm-6">
+                        <div class="single-footer-widget instafeed">
+                            <h6 class="footer_title">InstaFeed</h6>
+                            <ul class="list instafeed d-flex flex-wrap">
+                                <li><img src="img/instagram/Image-01.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-02.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-03.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-04.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-05.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-06.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-07.jpg" alt=""></li>
+                                <li><img src="img/instagram/Image-08.jpg" alt=""></li>
+                            </ul>
+                        </div>
+                    </div>						
+                </div>
+                <div class="border_line"></div>
+                <div class="row footer-bottom d-flex justify-content-between align-items-center">
+                    <p class="col-lg-8 col-md-8 footer-text m-0"><!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+Copyright &copy;<script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. --></p>
+                    <div class="col-lg-4 col-md-4 footer-social">
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="#"><i class="fa fa-twitter"></i></a>
+                        <a href="#"><i class="fa fa-dribbble"></i></a>
+                        <a href="#"><i class="fa fa-behance"></i></a>
+                    </div>
+                </div>
+            </div>
+        </footer>
+		<!--================ End footer Area  =================-->
+        
+        
+        
+        
+        <!-- Optional JavaScript -->
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="{% static 'js/jquery-3.2.1.min.js' %} "></script>
+        <script src="{% static 'js/popper.js' %}"></script>
+        <script src="{% static 'js/bootstrap.min.js' %}"></script>
+        <script src="{% static 'js/stellar.js' %}"></script>
+        <script src="{% static 'vendors/lightbox/simpleLightbox.min.js' %}"></script>
+        <script src="{% static 'vendors/nice-select/js/jquery.nice-select.min.js' %}"></script>
+        <script src="{% static 'vendors/isotope/imagesloaded.pkgd.min.js' %}"></script>
+        <script src="{% static 'vendors/isotope/isotope-min.js' %}"></script>
+        <script src="{% static 'vendors/owl-carousel/owl.carousel.min.js' %}"></script>
+        <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+        <script src="{% static 'js/mail-script.js' %}"></script>
+        <script src="{% static 'js/theme.js' %}"></script>
+    </body>
+</html>
